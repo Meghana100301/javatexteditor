@@ -19,16 +19,10 @@ public class register implements ActionListener
 	JFrame f1=new JFrame();
 	register()
 	{
-		JPanel p=new JPanel(new GridLayout(7,2));
+		JPanel p=new JPanel(new GridLayout(4,2));
 		JPanel p1=new JPanel();
-		JLabel l1=new JLabel("FirstName:");
-		JLabel l2=new JLabel("LastName:");
-		JTextField t1=new JTextField();
-		JTextField t2=new JTextField();
 		JLabel mail=new JLabel("Email id:");
-	    t3=new JTextField();
-		JLabel age=new JLabel("contact No:");
-		JTextField t4=new JTextField();
+	        t3=new JTextField();
 		JLabel pass=new JLabel("Set Password:");
 		passt=new JTextField();
 		JLabel cpass=new JLabel("Confirm Password:");
@@ -36,7 +30,7 @@ public class register implements ActionListener
 		error=new JLabel();
 		JButton submit=new JButton("Submit");
 		submit.addActionListener(this);
-		p.add(l1);p.add(t1);p.add(l2);p.add(t2);p.add(mail);p.add(t3);p.add(age);p.add(t4);
+		p.add(mail);p.add(t3);
 		p.add(pass);p.add(passt);p.add(cpass);p.add(cpasst);p.add(submit);p.add(error);
 		p1.add(p);
 		f1.add(p1);
